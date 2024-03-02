@@ -27,7 +27,7 @@ CACHES = {
 }
 
 
-EMAIL_HOST = 'localhost'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST = os.environ['*']
+EMAIL_HOST_USER = os.environ['']
+EMAIL_HOST_PASSWORD = os.environ[dj_database_url.config()]
 EMAIL_PORT = 2525
