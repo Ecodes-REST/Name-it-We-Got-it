@@ -4,7 +4,7 @@ from .common import *
 
 DEBUG= False
 
-SECRET_KEY= os.environ['SECRET_KEY']
+SECRET_KEY= os.environ.get('SECRET_KEY')
 
 ALLOWED_HOSTS = ["*"]
 
@@ -12,7 +12,7 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
-REDIS= os.environ['REDIS_URL']
+REDIS= os.environ.get('REDIS_URL')
 
 CELERY_BROKER_URL= REDIS_URL
 
@@ -26,8 +26,7 @@ CACHES = {
     }
 }
 
-
-EMAIL_HOST = os.environ['*']
-EMAIL_HOST_USER = os.environ['']
-EMAIL_HOST_PASSWORD = os.environ[dj_database_url.config()]
-EMAIL_PORT = 2525
+EMAIL_HOST = os.environ.get('EMAIL_HOST')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = os.environ.get('EMAIL_PORT', 2525)
