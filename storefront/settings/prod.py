@@ -8,8 +8,16 @@ SECRET_KEY= os.environ.get('SECRET_KEY')
 
 ALLOWED_HOSTS = ["*"]
 
+
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT':'57126',
+        'USER': 'postgres',
+        'PASSWORD': 'JBSTofsnkyJgGMgOURAkQsdXgdXkgoQj'
+    }
 }
 
 REDIS_URL= os.environ.get('REDIS_URL')
