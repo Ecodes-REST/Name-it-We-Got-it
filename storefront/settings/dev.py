@@ -14,11 +14,11 @@ SECRET_KEY = 'ghr58xdjpyv%@^=2lhvmkni6-&*bp9at@32f%28o3kgg7w85ka'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT':'57126',
-        'USER': 'postgres',
-        'PASSWORD': 'JBSTofsnkyJgGMgOURAkQsdXgdXkgoQj'
+        'NAME': 'storefront3',
+        'HOST': 'localhost',
+        'PORT':'5432',
+        'USER': 'E-Mollz',
+        'PASSWORD': 'Jr. Web Developer'
     }
 }
 
@@ -41,4 +41,3 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 2525
 
-ALLOWED_HOSTS = ['name-it-we-got-it-production.up.railway.app']
