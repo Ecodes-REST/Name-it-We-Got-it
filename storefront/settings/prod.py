@@ -4,7 +4,7 @@ from .common import *
 
 DEBUG= False
 
-SECRET_KEY= os.environ.get['SECRET_KEY']
+SECRET_KEY= os.environ.get('SECRET_KEY')
 
 ALLOWED_HOSTS = ['name-it-we-got-it-production.up.railway.app']
 
