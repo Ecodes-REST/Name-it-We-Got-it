@@ -14,13 +14,14 @@ SECRET_KEY = 'ghr58xdjpyv%@^=2lhvmkni6-&*bp9at@32f%28o3kgg7w85ka'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'storefront3',
-        'HOST': 'localhost',
-        'PORT':'5432',
-        'USER': 'E-Mollz',
-        'PASSWORD': 'Jr. Web Developer'
+        'NAME': 'railway',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT':'57126',
+        'USER': 'postgres',
+        'PASSWORD': 'JBSTofsnkyJgGMgOURAkQsdXgdXkgoQj'
     }
 }
+
 
 CELERY_BROKER_URL= 'redis://localhost:6379/1'
 
