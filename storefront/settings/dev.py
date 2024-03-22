@@ -39,3 +39,5 @@ EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 2525
+
+ALLOWED_HOSTS = ['name-it-we-got-it-production.up.railway.app']
