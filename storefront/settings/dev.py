@@ -7,7 +7,8 @@ if DEBUG:
     MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =ghr58xdjpyv%@^=2lhvmkni6-&*bp9at@32f%28o3kgg7w85ka
+SECRET_KEY = 'ghr58xdjpyv%@^=2lhvmkni6-&*bp9at@32f%28o3kgg7w85ka'
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DATABASES = {
