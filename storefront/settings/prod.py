@@ -2,7 +2,7 @@ import os
 import dj_database_url
 from .common import *
 
-DEBUG= True
+DEBUG= False
 
 SECRET_KEY= os.environ.get('SECRET_KEY')
 
@@ -45,3 +45,5 @@ EMAIL_PORT = os.environ.get('EMAIL_PORT', 2525)
 #HTTPS settings
 SESSION_COOKIE_SECURE= True
 CSRF_COOKIE_SECURE= True
+CSRF_TRUSTED_ORIGINS = ['https://name-it-we-got-it-production.up.railway.app']
+
